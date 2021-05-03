@@ -16,18 +16,11 @@ public class SPIELFELD
     public SPIELFELD()
     {
         // Instanzvariable initialisieren
-        x = 0;
+        Felder = new FELDER[100];
     }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
+    public void Zug()
     {
-        // tragen Sie hier den Code ein
-        return x + y;
+        
     }
+    
 }
