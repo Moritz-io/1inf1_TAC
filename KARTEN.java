@@ -8,7 +8,7 @@
 public abstract class KARTEN
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+    private int Kartenwert;
 
     /**
      * Konstruktor für Objekte der Klasse KARTEN
@@ -16,7 +16,7 @@ public abstract class KARTEN
     public KARTEN()
     {
         // Instanzvariable initialisieren
-        x = 0;
+        
     }
 
     /**
@@ -25,9 +25,9 @@ public abstract class KARTEN
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
-    public int beispielMethode(int y)
+    public void Action()
     {
         // tragen Sie hier den Code ein
-        return x + y;
+        
     }
 }
