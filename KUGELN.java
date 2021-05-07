@@ -8,26 +8,23 @@
 public class KUGELN
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+
+    int KugelID;
+    int KugelSpielerID;
 
     /**
      * Konstruktor für Objekte der Klasse KUGELN
      */
-    public KUGELN()
+    public KUGELN(int ID, int id)
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        this.KugelID = id;
+		this.KugelSpielerID = ID;
+        
     }
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
-    }
+public String toString() {
+		return(KugelSpielerID + ". Spieler-Kugel " + KugelID);
+	}  
+    
+
 }
