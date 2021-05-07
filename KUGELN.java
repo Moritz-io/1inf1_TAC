@@ -8,6 +8,7 @@
 public class KUGELN
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+<<<<<<< HEAD
     private int x;
 
     /**
@@ -30,4 +31,23 @@ public class KUGELN
         // tragen Sie hier den Code ein
         return x + y;
     }
+=======
+    int KugelID;
+    int KugelSpielerID;
+
+    /**
+     * Konstruktor für Objekte der Klasse KUGELN
+     */
+    public KUGELN(int ID, int id)
+    {
+        this.KugelID = id;
+		this.KugelSpielerID = ID;
+        
+    }
+
+public String toString() {
+		return(KugelSpielerID + ". Spieler-Kugel " + KugelID);
+	}  
+    
+>>>>>>> 8ca0e4918f75f03a2b88d6b404b558238339435b
 }

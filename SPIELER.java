@@ -13,10 +13,12 @@ public class SPIELER
     /**
      * Konstruktor für Objekte der Klasse SPIELER
      */
+
     public SPIELER(int x)
     {
         // Instanzvariable initialisieren
         x = x;
+
     }
 
     /**
