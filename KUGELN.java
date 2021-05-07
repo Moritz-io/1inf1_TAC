@@ -9,18 +9,20 @@ public class KUGELN
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     int KugelID;
-    String KugelSpielerName;
+    int KugelSpielerID;
 
     /**
      * Konstruktor für Objekte der Klasse KUGELN
      */
-    public KUGELN(String name, int id)
+    public KUGELN(int ID, int id)
     {
         this.KugelID = id;
-		this.KugelSpielerName = name;
+		this.KugelSpielerID = ID;
         
     }
 
-  
+public String toString() {
+		return(KugelSpielerID + ". Spieler-Kugel " + KugelID);
+	}  
     
 }
