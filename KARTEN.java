@@ -30,4 +30,5 @@ public abstract class KARTEN
         // tragen Sie hier den Code ein
         
     }
+    
 }

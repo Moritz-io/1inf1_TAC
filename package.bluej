@@ -1,18 +1,18 @@
 #BlueJ package file
-dependency1.from=HAUS
-dependency1.to=FELDER
+dependency1.from=SPIELFELD
+dependency1.to=SPIELER
 dependency1.type=UsesDependency
-dependency2.from=SPIELER
-dependency2.to=KARTEN
+dependency2.from=SPIELFELD
+dependency2.to=HAUS
 dependency2.type=UsesDependency
 dependency3.from=SPIELFELD
-dependency3.to=SPIELER
+dependency3.to=FELDER
 dependency3.type=UsesDependency
-dependency4.from=SPIELFELD
-dependency4.to=HAUS
+dependency4.from=HAUS
+dependency4.to=FELDER
 dependency4.type=UsesDependency
-dependency5.from=SPIELFELD
-dependency5.to=FELDER
+dependency5.from=SPIELER
+dependency5.to=KARTEN
 dependency5.type=UsesDependency
 editor.fx.0.height=1056
 editor.fx.0.width=1936

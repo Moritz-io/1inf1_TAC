@@ -21,5 +21,17 @@ public class HAUS
         Felder = new FELDER[4];
     }
     
+    
+    boolean Win()
+    {
+        if (Felder[0] != null && Felder[1] != null && Felder[2] != null && Felder[3] != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
  
 }
