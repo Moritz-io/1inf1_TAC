@@ -37,6 +37,7 @@ public class SPIELFELD
         HAUS Haus2 = new HAUS(2);
         HAUS Haus3 = new HAUS(3);
         HAUS Haus4 = new HAUS(4);
+        
     }
     public void Spiel()
     { while (victory == false)

@@ -8,29 +8,36 @@
 public class FELDER
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    KUGELN[] spielFeldArray;
- boolean feldBelegt;
+
+    boolean feldbelegt;
     /**
      * Konstruktor für Objekte der Klasse FELDER
      */
     public FELDER()
     {
         // Instanzvariable initialisieren
-      spielFeldArray = new KUGELN[1];
-      feldBelegt = false;
+      
+        
+      feldbelegt = false;
+      
     }
-void istFeldBelegt()
-{ if ( feldBelegt == false)
+    
+
+    boolean istfeldBelegt(int KugelID )
+    { if( KugelID == 0 )
+    
     {
-    System.out.println("Nicht Belegt");
+     feldbelegt = false;  
+    return false;
     
     }
     else 
     {
-    System.out.println("Belegt");
+     feldbelegt =true;    
+    return true;
     }
 
 
-}
+    }
     
 }
