@@ -18,13 +18,13 @@ public class KUGELN
     public KUGELN(int ID, int id)
     {
         this.KugelID = id;
-		this.KugelSpielerID = ID;
+        this.KugelSpielerID = ID;
         
     }
 
 public String toString() {
-		return(KugelSpielerID + ". Spieler-Kugel " + KugelID);
-	}  
+        return(KugelSpielerID + ". Spieler-Kugel " + KugelID);
+    }  
     
 
 }
