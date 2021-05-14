@@ -85,7 +85,6 @@ public class SPIELFELD
         {
             int int_random1 = rand.nextInt(18); 
             Spieler1.Zieht(x,int_random1);
-        
        
             int int_random2 = rand.nextInt(18); 
             Spieler2.Zieht(x,int_random2);
