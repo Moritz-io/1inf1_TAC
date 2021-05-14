@@ -8,6 +8,7 @@
 public class KUGELN
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+
     int KugelID;
     int KugelSpielerID;
 
@@ -25,4 +26,5 @@ public String toString() {
         return(KugelSpielerID + ". Spieler-Kugel " + KugelID);
     }  
     
+
 }

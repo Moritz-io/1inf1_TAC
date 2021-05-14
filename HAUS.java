@@ -8,26 +8,18 @@
 public class HAUS
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+    private int Wert;
+    public FELDER[] Felder;
 
     /**
      * Konstruktor für Objekte der Klasse HAUS
      */
-    public HAUS()
+    public HAUS(int x)
     {
         // Instanzvariable initialisieren
-        x = 0;
+        Wert = x;
+        Felder = new FELDER[4];
     }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
-    }
+    
+ 
 }

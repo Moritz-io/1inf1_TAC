@@ -8,15 +8,18 @@
 public class SPIELER
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+    public KARTEN[] Karten;
 
     /**
      * Konstruktor für Objekte der Klasse SPIELER
      */
-    public SPIELER()
+
+    public SPIELER(int x)
     {
         // Instanzvariable initialisieren
-        x = 0;
+        x = x;
+        Karten = new KARTEN[5];
+
     }
 
     /**
@@ -25,9 +28,8 @@ public class SPIELER
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
-    public int beispielMethode(int y)
+    public void Zug()
     {
-        // tragen Sie hier den Code ein
-        return x + y;
+        
     }
 }
