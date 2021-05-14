@@ -28,18 +28,20 @@ public class SPIELFELD
         Felder = new FELDER[64];
         victory = false;
         
-        SPIELER Spieler1 = new SPIELER(1);
-        SPIELER Spieler2 = new SPIELER(2);
-        SPIELER Spieler3 = new SPIELER(3);
-        SPIELER Spieler4 = new SPIELER(4);
+        Spieler1 = new SPIELER(1);
+        Spieler2 = new SPIELER(2);
+        Spieler3 = new SPIELER(3);
+        Spieler4 = new SPIELER(4);
         
-        HAUS Haus1 = new HAUS(1);
-        HAUS Haus2 = new HAUS(2);
-        HAUS Haus3 = new HAUS(3);
-        HAUS Haus4 = new HAUS(4);
+        Haus1 = new HAUS(1);
+        Haus2 = new HAUS(2);
+        Haus3 = new HAUS(3);
+        Haus4 = new HAUS(4);
     }
+    
     public void Spiel()
-    { while (victory == false)
+    { 
+        while (victory == false)
         {
             Runde();
         }
@@ -57,12 +59,34 @@ public class SPIELFELD
             Spieler2.Zug();
             Spieler3.Zug();
             Spieler4.Zug();
+            if (Haus1.Win() ==true)
+            {
+                victory = true;
+                System.out.println ("Spieler 1 gewinnt!");
+            }
+            else if (Haus2.Win() ==true)
+            {
+                victory = true;
+                System.out.println ("Spieler 2 gewinnt!");
+            }
+            else if (Haus3.Win() ==true)
+            {
+                victory = true;
+                System.out.println ("Spieler 3 gewinnt!");
+            }
+            else if (Haus4.Win() ==true)
+            {
+                victory = true;
+                System.out.println ("Spieler 4 gewinnt!");
+            }
         }
     }
+    
     public void Kartenziehen()
     {
         
     }
+    
     }
 
     
