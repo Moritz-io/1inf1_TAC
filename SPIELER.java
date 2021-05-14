@@ -32,4 +32,8 @@ public class SPIELER
     {
         
     }
+    public void Zieht(int Feldwert, int Kartenwert)
+    {
+        
+    }
 }

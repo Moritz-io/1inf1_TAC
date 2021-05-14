@@ -33,7 +33,7 @@ public class SPIELFELD
         Haus2 = new HAUS(2);
         Haus3 = new HAUS(3);
         Haus4 = new HAUS(4);
-        Random rand = new Random(); 
+        rand = new Random(); 
     }
     
     public void Spiel()
@@ -81,8 +81,21 @@ public class SPIELFELD
     
     public void Kartenziehen()
     {
-        int int_random = rand.nextInt(18); 
+        for(int x = 0; x<5 ; x++) 
+        {
+            int int_random1 = rand.nextInt(18); 
+            Spieler1.Zieht(x,int_random1);
         
+       
+            int int_random2 = rand.nextInt(18); 
+            Spieler2.Zieht(x,int_random2);
+       
+            int int_random3 = rand.nextInt(18); 
+            Spieler3.Zieht(x,int_random3);
+       
+            int int_random4 = rand.nextInt(18); 
+            Spieler4.Zieht(x,int_random4);
+        }
     }
     
     }
