@@ -1,10 +1,6 @@
 
-/**
- * Beschreiben Sie hier die Klasse SPIELFELD.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+import java.util.Random;
+
 public class SPIELFELD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
@@ -18,7 +14,7 @@ public class SPIELFELD
     public HAUS Haus2;
     public HAUS Haus3;
     public HAUS Haus4;
-    
+    public Random rand;
     /**
      * Konstruktor für Objekte der Klasse SPIELFELD
      */
@@ -37,6 +33,7 @@ public class SPIELFELD
         Haus2 = new HAUS(2);
         Haus3 = new HAUS(3);
         Haus4 = new HAUS(4);
+        Random rand = new Random(); 
     }
     
     public void Spiel()
@@ -84,6 +81,7 @@ public class SPIELFELD
     
     public void Kartenziehen()
     {
+        int int_random = rand.nextInt(18); 
         
     }
     
