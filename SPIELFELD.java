@@ -29,19 +29,13 @@ public class SPIELFELD
         Spieler3 = new SPIELER(3);
         Spieler4 = new SPIELER(4);
         
-<<<<<<< HEAD
-        HAUS Haus1 = new HAUS(1);
-        HAUS Haus2 = new HAUS(2);
-        HAUS Haus3 = new HAUS(3);
-        HAUS Haus4 = new HAUS(4);
-        
-=======
+
         Haus1 = new HAUS(1);
         Haus2 = new HAUS(2);
         Haus3 = new HAUS(3);
         Haus4 = new HAUS(4);
         rand = new Random(); 
->>>>>>> a25aa72cf931e44310574ad9dd17283cdc6c0308
+
     }
     
     public void Spiel()
