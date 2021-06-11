@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.geom.*;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
+import java.awt.Graph;
 
 public class GUI2 implements ActionListener
 {
@@ -13,6 +13,7 @@ public class GUI2 implements ActionListener
     public static void main(String[] args)
     {
         new GUI2();
+        
     }
     
     GUI2()
