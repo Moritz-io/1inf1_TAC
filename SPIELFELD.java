@@ -4,6 +4,10 @@ public class SPIELFELD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private FELDER[] Felder;
+    FELDER[] Startfeld1;
+    FELDER[] Startfeld2;
+    FELDER[] Startfeld3;
+    FELDER[] Startfeld4;
     public SPIELER Spieler1;
     public SPIELER Spieler2;
     public SPIELER Spieler3;
@@ -20,7 +24,13 @@ public class SPIELFELD
     public SPIELFELD(int x)
     {
         // Instanzvariable initialisieren
-        Felder = new FELDER[64];
+        Felder = new FELDER[60];
+        
+        Startfeld1 = new FELDER[1];
+        Startfeld2 = new FELDER[1];
+        Startfeld3 = new FELDER[1];
+        Startfeld4 = new FELDER[1];
+        
         victory = false;
 
         Spieler1 = new SPIELER(1);

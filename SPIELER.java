@@ -21,7 +21,14 @@ public class SPIELER
         Karten = new KARTEN[5];
 
     }
+void KugelSetzen()
+{ 
+  
+}
+void Kugelbewegen()
+{
 
+}
     /**
      * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
      * 
