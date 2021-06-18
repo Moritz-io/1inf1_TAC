@@ -19,17 +19,8 @@ public class Gui
         Var.jf1.addKeyListener(new KeyHandler());
         Var.jf1.setVisible(true);
         
-       
-		
-		CircleButton circleButton = new CircleButton("Click me!");
-		circleButton.addActionListener(new ActionListener(){
-				public void actionPerformed(ActionEvent e){
-					System.out.println("Clicked!");
-				}
-		});
-		
-		Var.jf1.add(circleButton);
-		
-		
-		    }
+    
+        
+        
+            }
 }
