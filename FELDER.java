@@ -10,18 +10,16 @@ public class FELDER
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
 
     boolean feldbelegt;
-    KUGELN Kugel; 
-    FELDER NachfolgeFeld;
-    
     /**
      * Konstruktor für Objekte der Klasse FELDER
      */
-    public FELDER(FELDER n)
+    public FELDER()
     {
         // Instanzvariable initialisieren
-      Kugel= null; 
+      
+        
       feldbelegt = false;
-      NachfolgeFeld = n;
+      
     }
     
 
@@ -40,10 +38,6 @@ public class FELDER
     }
 
 
-    }
-    void KugelZieht (KUGELN KugelNeu)
-    {
-        Kugel = KugelNeu;
     }
     
 }
