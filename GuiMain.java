@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 public class GuiMain{
     JFrame frame;
     JPanel panel;
-    CircleButton circleButton;
+    
     RoundButton roundButton;
     
         GuiMain()
@@ -22,17 +22,7 @@ public class GuiMain{
         
         panel = new JPanel();
         frame.add(panel);
-        circleButton = new CircleButton("Kugel");
-        panel.add(circleButton);
-        circleButton.setLocation(200,100);
-        circleButton.setEnabled(true);
-        circleButton.setVisible(true);
-        
-        circleButton.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                System.out.println("Clicked!");
-            }
-        });
+      
         
         roundButton = new RoundButton("Kugel",75);
         panel.add(roundButton);
