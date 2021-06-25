@@ -14,9 +14,14 @@ int StartfeldID;
     /**
      * Konstruktor für Objekte der Klasse STARTFELD
      */
-    public STARTFELD(int StartfeldID)
+    public STARTFELD(int StartfeldID, FELDER n)
     {
-        // Instanzvariable initialisieren
+        super(n);
+
+    }
+       public STARTFELD(int StartfeldID)
+    {
+        super();
 
     }
 
