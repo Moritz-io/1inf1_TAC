@@ -10,6 +10,8 @@ public class SPIELER
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     public KARTEN[] Karten;
 int x;
+ boolean feldbelegt;
+ KUGELN Kugel;
     /**
      * Konstruktor für Objekte der Klasse SPIELER
      */
@@ -19,13 +21,15 @@ int x;
         // Instanzvariable initialisieren
         x = y;
         Karten = new KARTEN[5];
-        
-        
+       
+        feldbelegt = false;
 
     }
-void KugelSetzen()
+STARTFELD KugelSetzen(KUGELN k)
 { 
-  System.out.println("yeah");
+  Kugel = k;
+        feldbelegt = true;
+        
 }
 void Kugelbewegen()
 {

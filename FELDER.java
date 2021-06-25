@@ -11,7 +11,7 @@ public class FELDER
 
     boolean feldbelegt;
     FELDER NachfolgeFeld;
-    KUGEL Kugel;
+    KUGELN Kugel;
     /**
      * Konstruktor für Objekte der Klasse FELDER
      */
@@ -46,7 +46,7 @@ public class FELDER
     }
     }
 
-    public void KugelEinfügen(KUGEL k)
+    public void KugelEinfügen(KUGELN k)
     { 
         Kugel = k;
         feldbelegt = true;
