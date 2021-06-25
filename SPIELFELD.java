@@ -18,13 +18,17 @@ public class SPIELFELD
     public HAUS Haus3;
     public HAUS Haus4;
     public Random rand;
-    STARTFELD anfang;
+    FELDER anfang;
+    FELDER abschluss;
     /**
      * Konstruktor für Objekte der Klasse SPIELFELD
      */
     public SPIELFELD(int x)
     {
-        anfang = new STARTFELD();
+        anfang = new STARTFELD(1);
+        abschluss = anfang;
+        
+        
         
         victory = false;
 
@@ -42,11 +46,18 @@ public class SPIELFELD
 
     }
     
-    void VorneEinfuegen (DATENELEMENT dneu)
+    void StartfeldEinfügen()
+    {
+        STARTFELD Startfeld;
+        Startfeld = new STARTFELD(1;anfang);    
+    }
+    
+    void FeldEinfuegen ()
     {
         FELDER Feld;
         Feld = new FELDER(anfang);
-        anfang. Darstellen(0);
+        anfang = Feld;
+        //anfang. Darstellen(0);
     }
     
     public void Spiel()
