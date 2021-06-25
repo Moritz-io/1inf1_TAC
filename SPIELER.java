@@ -9,21 +9,23 @@ public class SPIELER
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     public KARTEN[] Karten;
-
+int x;
     /**
      * Konstruktor für Objekte der Klasse SPIELER
      */
 
-    public SPIELER(int x)
+    public SPIELER(int y)
     {
         // Instanzvariable initialisieren
-        x = x;
+        x = y;
         Karten = new KARTEN[5];
+        
+        
 
     }
 void KugelSetzen()
 { 
-  
+  System.out.println("yeah");
 }
 void Kugelbewegen()
 {
