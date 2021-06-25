@@ -25,6 +25,7 @@ public class SPIELFELD
      */
     public SPIELFELD(int x)
     {
+        new GuiMain();
         anfang = new STARTFELD(1);
         abschluss = anfang;
         
@@ -44,6 +45,12 @@ public class SPIELFELD
         Haus4 = new HAUS(4);
         rand = new Random(); 
 
+    }
+    public static void main(String[] args)
+    {
+        new GuiMain();
+        //new Var();
+        //new Label(); 
     }
     
     void StartfeldEinfügen()
