@@ -120,5 +120,15 @@ public class SPIELFELD
             Spieler4.Zieht(x,int_random4);
         }
     }
+     STARTFELD SpielerIDprüfen(int x,int StartfeldID)
+     {
+        if(x == StartfeldID){
+            Spieler1.KugelSetzen();
+        }
+        else {
+            System.out.println("Falsches Startfeld");
+        }
+        return null;
+    }
 
     }
