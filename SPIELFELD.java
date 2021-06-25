@@ -3,11 +3,7 @@ import java.util.Random;
 public class SPIELFELD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private FELDER[] Felder;
-    FELDER[] Startfeld1;
-    FELDER[] Startfeld2;
-    FELDER[] Startfeld3;
-    FELDER[] Startfeld4;
+    
     public SPIELER Spieler1;
     public SPIELER Spieler2;
     public SPIELER Spieler3;
@@ -29,6 +25,17 @@ public class SPIELFELD
         anfang = new STARTFELD(1);
         abschluss = anfang;
         
+        for(int j=2 ; j<=4; j++)
+        { 
+        for(int i=0; i<=14; i++)
+        { FeldEinfügen();
+    }
+        StartfeldEinfügen(j);
+    }
+      for(int i=0; i<=14; i++)
+        { FeldEinfügen();
+    }
+      abschluss.Nachfolger(anfang);  
         
         
         victory = false;
@@ -53,13 +60,13 @@ public class SPIELFELD
         //new Label(); 
     }
     
-    void StartfeldEinfügen()
+    void StartfeldEinfügen(int ID)
     {
         STARTFELD Startfeld;
-        Startfeld = new STARTFELD(1 , anfang);    
+        Startfeld = new STARTFELD(ID , anfang);    
     }
     
-    void FeldEinfuegen ()
+    void FeldEinfügen ()
     {
         FELDER Feld;
         Feld = new FELDER(anfang);
