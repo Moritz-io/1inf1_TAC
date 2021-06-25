@@ -49,7 +49,7 @@ public class SPIELFELD
     void StartfeldEinfügen()
     {
         STARTFELD Startfeld;
-        Startfeld = new STARTFELD(1;anfang);    
+        Startfeld = new STARTFELD(1 , anfang);    
     }
     
     void FeldEinfuegen ()
