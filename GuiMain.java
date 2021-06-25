@@ -15,7 +15,7 @@ public class GuiMain{
     {
         frame = new JFrame("Tac");
         
-        frame.setSize(600, 350);
+        frame.setSize(1000, 700);
         
         frame.addKeyListener(new KeyHandler());
         frame.setVisible(true); 
@@ -24,7 +24,7 @@ public class GuiMain{
         frame.add(panel);
       
         
-        roundButton = new RoundButton("Kugel",75);
+        roundButton = new RoundButton("Kugel 1",75);
         panel.add(roundButton);
         roundButton.setLocation(400,100);
         roundButton.setEnabled(true);
@@ -32,6 +32,36 @@ public class GuiMain{
         roundButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 System.out.println("Clicked???");
+            }
+        });
+        roundButton = new RoundButton("Kugel 2",75);
+        panel.add(roundButton);
+        roundButton.setLocation(40,100);
+        roundButton.setEnabled(true);
+        roundButton.setVisible(true);
+        roundButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Clicked 2???");
+            }
+        });
+        roundButton = new RoundButton("Kugel 3",75);
+        panel.add(roundButton);
+        roundButton.setLocation(80,100);
+        roundButton.setEnabled(true);
+        roundButton.setVisible(true);
+        roundButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Clicked 3???");
+            }
+        });
+        roundButton = new RoundButton("Kugel 4",75);
+        panel.add(roundButton);
+        roundButton.setLocation(120,100);
+        roundButton.setEnabled(true);
+        roundButton.setVisible(true);
+        roundButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Clicked 4???");
             }
         });
         
