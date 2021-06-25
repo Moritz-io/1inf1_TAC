@@ -18,18 +18,13 @@ public class SPIELFELD
     public HAUS Haus3;
     public HAUS Haus4;
     public Random rand;
+    STARTFELD anfang;
     /**
      * Konstruktor für Objekte der Klasse SPIELFELD
      */
     public SPIELFELD(int x)
     {
-        // Instanzvariable initialisieren
-        Felder = new FELDER[60];
-        
-        Startfeld1 = new FELDER[1];
-        Startfeld2 = new FELDER[1];
-        Startfeld3 = new FELDER[1];
-        Startfeld4 = new FELDER[1];
+        anfang = new STARTFELD();
         
         victory = false;
 
@@ -46,7 +41,14 @@ public class SPIELFELD
         rand = new Random(); 
 
     }
-
+    
+    void VorneEinfuegen (DATENELEMENT dneu)
+    {
+        FELDER Feld;
+        Feld = new FELDER(anfang);
+        anfang. Darstellen(0);
+    }
+    
     public void Spiel()
     { 
         while (victory == false)
