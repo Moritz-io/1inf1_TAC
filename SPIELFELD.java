@@ -137,7 +137,7 @@ public class SPIELFELD
      STARTFELD SpielerIDprüfen(int x,int StartfeldID)
      {
         if(x == StartfeldID){
-            Spieler1.KugelSetzen();
+            Spieler1.KugelSetzen(x,3);
         }
         else {
             System.out.println("Falsches Startfeld");

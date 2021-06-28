@@ -12,9 +12,9 @@ public class SPIELER
 int x;
  boolean feldbelegt;
  KUGELN Kugel;
-    /**
-     * Konstruktor für Objekte der Klasse SPIELER
-     */
+ 
+ 
+
 
     public SPIELER(int y)
     {
@@ -25,10 +25,13 @@ int x;
         feldbelegt = false;
 
     }
-STARTFELD KugelSetzen(KUGELN k)
+void KugelSetzen(int x, int y)
 { 
-  Kugel = k;
-        feldbelegt = true;
+  
+  KUGELN K = new KUGELN(x,y);
+ 
+  
+   
         
 }
 void Kugelbewegen()
