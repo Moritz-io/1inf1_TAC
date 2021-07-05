@@ -9,7 +9,7 @@ public class SPIELER
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     public KARTEN[] Karten;
-int x;
+int SPIELERID;
  boolean feldbelegt;
  KUGELN Kugel;
  
@@ -19,16 +19,16 @@ int x;
     public SPIELER(int y)
     {
         // Instanzvariable initialisieren
-        x = y;
+        SPIELERID = y;
         Karten = new KARTEN[5];
        
         feldbelegt = false;
 
     }
-void KugelSetzen(int x, int y)
+void KugelSetzen(int y)
 { 
   
-  KUGELN K = new KUGELN(x,y);
+  KUGELN K = new KUGELN(SPIELERID,y);
  
   
    
