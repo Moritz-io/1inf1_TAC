@@ -4,7 +4,7 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+import javax.swing.ImageIcon;
 public class GuiMain{
     JFrame frame;
     JPanel panel;
@@ -25,6 +25,7 @@ public class GuiMain{
       
         
         roundButton = new RoundButton("Kugel 1",75);
+        roundButton.setIcon(new ImageIcon("C:\\Users\\KahlOsk\\Documents\\Info Q11\\Tac_2\\Bilder\\Blau.png"));
         panel.add(roundButton);
         roundButton.setLocation(400,100);
         roundButton.setEnabled(true);
@@ -35,6 +36,7 @@ public class GuiMain{
             }
         });
         roundButton = new RoundButton("Kugel 2",75);
+        roundButton.setIcon(new ImageIcon("C:\\Users\\KahlOsk\\Documents\\Info Q11\\Tac_2\\Bilder\\Rot.png"));
         panel.add(roundButton);
         roundButton.setLocation(40,100);
         roundButton.setEnabled(true);
@@ -64,6 +66,5 @@ public class GuiMain{
                 System.out.println("Clicked 4???");
             }
         });
-        
     }
 }
