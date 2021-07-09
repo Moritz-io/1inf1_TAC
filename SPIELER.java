@@ -9,9 +9,10 @@ public class SPIELER
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     public KARTEN[] Karten;
-int SPIELERID;
+ int SPIELERID;
  boolean feldbelegt;
  KUGELN Kugel;
+ FELDER Start;
  
  
 
@@ -21,14 +22,16 @@ int SPIELERID;
         // Instanzvariable initialisieren
         SPIELERID = y;
         Karten = new KARTEN[5];
-       
         feldbelegt = false;
+        Start = null;
 
     }
 void KugelSetzen(int y)
 { 
-  
+  Start = SPIELFELD.StartfeldFinden(SPIELERID);
   KUGELN K = new KUGELN(SPIELERID,y);
+  Start.KugelEinfügen(K);
+  
  
   
    

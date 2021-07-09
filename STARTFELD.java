@@ -14,16 +14,20 @@ int StartfeldID;
     /**
      * Konstruktor für Objekte der Klasse STARTFELD
      */
-    public STARTFELD(int StartfeldID, FELDER n)
+    public STARTFELD(int Startfeld, FELDER n)
     {
         super(n);
+        StartfeldID= Startfeld;
 
     }
-       public STARTFELD(int StartfeldID)
+       public STARTFELD(int Startfeld)
     {
         super();
+        StartfeldID= Startfeld;
 
     }
+  
+    
 
   
     }

@@ -12,6 +12,7 @@ public class FELDER
     boolean feldbelegt;
     FELDER NachfolgeFeld;
     KUGELN Kugel;
+    int StartfeldID;
     /**
      * Konstruktor für Objekte der Klasse FELDER
      */
@@ -21,6 +22,7 @@ public class FELDER
       Kugel= null;
       feldbelegt = false;
       NachfolgeFeld = null;
+      StartfeldID= 0;
     }
      public FELDER(FELDER n)
     {
@@ -56,7 +58,23 @@ public class FELDER
     {
     NachfolgeFeld = n;
     }
-
+    
+    int IDAusgeben()
+    {
+        return StartfeldID;
+    }
+    FELDER IDSuche(int ID)
+    {if (StartfeldID == ID)
+        {
+            return this;
+        }
+        else 
+        {
+            
+        return NachfolgeFeld.IDSuche(ID);
+        }
+        
+    }
     }
     
     

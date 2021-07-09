@@ -14,7 +14,7 @@ public class SPIELFELD
     public HAUS Haus3;
     public HAUS Haus4;
     public Random rand;
-    FELDER anfang;
+    static FELDER anfang;
     FELDER abschluss;
     /**
      * Konstruktor für Objekte der Klasse SPIELFELD
@@ -90,10 +90,10 @@ public class SPIELFELD
         Kartenziehen();
         for(int i=5;i != 0; i--)
         {
-            Spieler1.Zug();
-            Spieler2.Zug();
-            Spieler3.Zug();
-            Spieler4.Zug();
+            Zug(Spieler1);
+            Zug(Spieler2);
+            Zug(Spieler3);
+            Zug(Spieler4);
             if (Haus1.Win() ==true)
             {
                 victory = true;
@@ -134,15 +134,20 @@ public class SPIELFELD
             Spieler4.Zieht(x,int_random4);
         }
     }
-     STARTFELD SpielerIDprüfen(int x,int StartfeldID)
-     {
-        if(x == StartfeldID){
-            Spieler1.KugelSetzen(x,3);
-        }
-        else {
-            System.out.println("Falsches Startfeld");
-        }
-        return null;
+ 
+    
+    void Zug(SPIELER s)
+    {s.KugelSetzen(1);
+        
     }
+    static FELDER StartfeldFinden(int ID)
+     { return anfang.IDSuche(ID);
+        
+     }
+       void Zug1()
+    {Spieler1.KugelSetzen(1);
+        
+    }
+    
 
     }
