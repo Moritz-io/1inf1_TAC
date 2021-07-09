@@ -134,11 +134,13 @@ public class SPIELFELD
             Spieler4.Zieht(x,int_random4);
         }
     }
+
  
     
     void Zug(SPIELER s)
     {s.KugelSetzen(1);
         
+
     }
     static FELDER StartfeldFinden(int ID)
      { return anfang.IDSuche(ID);
