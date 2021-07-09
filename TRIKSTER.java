@@ -1,22 +1,22 @@
 
 /**
- * Beschreiben Sie hier die Klasse KARTEN.
+ * Beschreiben Sie hier die Klasse TRIKSTER.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public abstract class KARTEN
+public class TRIKSTER extends KARTEN
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int Kartenwert;
+    private int x;
 
     /**
-     * Konstruktor für Objekte der Klasse KARTEN
+     * Konstruktor für Objekte der Klasse TRIKSTER
      */
-    public KARTEN()
+    public TRIKSTER()
     {
         // Instanzvariable initialisieren
-        
+        x = 0;
     }
 
     /**
@@ -25,10 +25,9 @@ public abstract class KARTEN
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
-    public void Action()
+    public int beispielMethode(int y)
     {
-        
-        
+        // tragen Sie hier den Code ein
+        return x + y;
     }
-    
 }
